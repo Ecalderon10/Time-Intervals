@@ -1,13 +1,13 @@
 var timeEl = document.querySelector(".time");
 
-var mainEl = documnet.getElementById("main");
+var mainEl = document.getElementById("main");
 
-var secondsLeft = 5;
+var secondsLeft = 10;
 
 function setTime() {
   var timerInterval = setInterval(function () {
-    secondsleft--;
-    timeEl.textContent = secondsLeft + "Random fun pictue appears";
+    secondsLeft--;
+    timeEl.textContent = secondsLeft + " Random fun picture appears";
 
     if (secondsLeft === 0) {
       clearInterval(timerInterval);
@@ -17,11 +17,11 @@ function setTime() {
 }
 
 function sendMessage() {
-  timeEl.textContent = "";
+  timeEl.textContent = " ";
   var imgEl = document.createElement("img");
   imgEl.setAttribute(
     "src",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUPiYB8dCdTJN7DTmcliXhmof21Wdy0RIqng&usqp=CAU"
+    "https://oceanvodka.com/uploads/2019/04/HP-Hero-Header@2x.jpg"
   );
   mainEl.appendChild(imgEl);
 }
